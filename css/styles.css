@@ -30,7 +30,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -76,11 +76,11 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 90px;
 }
 
 .nav-logo img {
-  height: 60px;
+  height: 78px;
   width: auto;
 }
 
@@ -622,7 +622,7 @@ ul { list-style: none; }
 
   .nav-links {
     position: fixed;
-    top: 72px;
+    top: 90px;
     left: 0;
     right: 0;
     background: rgba(10, 10, 10, 0.98);
