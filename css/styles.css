@@ -178,6 +178,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
   background: url('../images/hero-bg.webp') center/cover no-repeat;
   text-align: center;
 }
