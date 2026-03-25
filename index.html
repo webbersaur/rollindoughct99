@@ -27,23 +27,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Local Business Schema -->
+  <!-- Local Business + Catering Service Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FoodEstablishment",
+    "@type": ["FoodEstablishment", "CateringService"],
     "name": "Rollin Dough Wood Fired Apizza",
-    "description": "Mobile wood fired apizza trailer serving Guilford CT and Connecticut. New Haven-style pizza catering for weddings, parties, and corporate events.",
+    "alternateName": "Rollin Dough CT",
+    "description": "Mobile wood fired apizza trailer serving Guilford CT and all of Connecticut. New Haven-style pizza catering for weddings, graduations, corporate events, and private parties. 3 generations of dough-slinging tradition.",
     "url": "https://rollindoughct.com",
-    "image": "https://rollindoughct.com/images/pizza-trailer-guilford-ct.webp",
+    "image": [
+      "https://rollindoughct.com/images/pizza-trailer-guilford-ct.webp",
+      "https://rollindoughct.com/images/catering-spread.webp",
+      "https://rollindoughct.com/images/new-haven-apizza.webp",
+      "https://rollindoughct.com/images/making-pizza.webp"
+    ],
+    "logo": "https://rollindoughct.com/images/logo.png",
     "telephone": "+1-203-675-1306",
     "email": "rollindoughmobile@gmail.com",
-    "servesCuisine": ["Pizza", "New Haven-style Apizza", "Italian"],
+    "servesCuisine": ["Pizza", "New Haven-style Apizza", "Wood Fired Pizza", "Italian"],
     "priceRange": "$$",
-    "areaServed": {
-      "@type": "State",
-      "name": "Connecticut"
-    },
+    "currenciesAccepted": "USD",
+    "knowsLanguage": "en",
+    "slogan": "We don't just bring the party — we are the party.",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Guilford",
+        "containedInPlace": { "@type": "State", "name": "Connecticut" }
+      },
+      {
+        "@type": "City",
+        "name": "Madison",
+        "containedInPlace": { "@type": "State", "name": "Connecticut" }
+      },
+      {
+        "@type": "City",
+        "name": "Branford",
+        "containedInPlace": { "@type": "State", "name": "Connecticut" }
+      },
+      {
+        "@type": "City",
+        "name": "New Haven",
+        "containedInPlace": { "@type": "State", "name": "Connecticut" }
+      },
+      {
+        "@type": "State",
+        "name": "Connecticut"
+      }
+    ],
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 41.288587,
@@ -53,32 +85,140 @@
       "@type": "PostalAddress",
       "addressLocality": "Guilford",
       "addressRegion": "CT",
+      "postalCode": "06437",
       "addressCountry": "US"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Catering Packages",
+      "name": "Pizza Trailer Catering Packages",
       "itemListElement": [
         {
           "@type": "Offer",
-          "name": "Up to 50 Guests",
+          "name": "Pizza Trailer Catering — Up to 50 Guests",
+          "description": "All-you-can-eat wood fired pizza, 2 salads, and choice of dessert for up to 50 guests. Tax included.",
           "price": "1400",
           "priceCurrency": "USD"
         },
         {
           "@type": "Offer",
-          "name": "50-75 Guests",
+          "name": "Pizza Trailer Catering — 50 to 75 Guests",
+          "description": "All-you-can-eat wood fired pizza, 2 salads, and choice of dessert for 50-75 guests. Tax included.",
           "price": "1700",
           "priceCurrency": "USD"
         },
         {
           "@type": "Offer",
-          "name": "75-100 Guests",
+          "name": "Pizza Trailer Catering — 75 to 100 Guests",
+          "description": "All-you-can-eat wood fired pizza, 2 salads, and choice of dessert for 75-100 guests. Tax included.",
           "price": "2000",
           "priceCurrency": "USD"
         }
       ]
-    }
+    },
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Rollin Dough Pizza Menu",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Signature Pies",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Buffalo Chicken Pizza" },
+            { "@type": "MenuItem", "name": "BBQ Chicken Pizza" },
+            { "@type": "MenuItem", "name": "Chicken Bacon Ranch Pizza" },
+            { "@type": "MenuItem", "name": "Margherita Pizza", "description": "White pie with fresh tomato" },
+            { "@type": "MenuItem", "name": "The Marco", "description": "White pie with bacon, ricotta, and honey" },
+            { "@type": "MenuItem", "name": "The Mondo", "description": "White pie with roasted peppers, fresh mozzarella, ricotta, and garlic" },
+            { "@type": "MenuItem", "name": "Creamy Vodka Chicken Pizza", "description": "Vodka sauce base with grilled chicken and fresh mozzarella" },
+            { "@type": "MenuItem", "name": "Hawaiian Pizza" },
+            { "@type": "MenuItem", "name": "Mashed Potato Pizza", "description": "Mozzarella and cheddar blend with bacon and/or broccoli on a white pie" },
+            { "@type": "MenuItem", "name": "Clams Casino Pizza", "description": "Clams, roasted peppers, bacon, and garlic on a white pie" },
+            { "@type": "MenuItem", "name": "Spaghetti and Meatballs Pizza" }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Build Your Own",
+          "description": "Hand-stretched dough with your choice of toppings",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Build Your Own Pizza", "description": "Choose from pepperoni, sausage, meatball, bacon, chicken, clams, shrimp, mushrooms, onions, roasted red peppers, broccoli, spinach, eggplant, sliced tomato, pineapple, ricotta, fresh mozzarella, garlic, and basil" }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Sides & Desserts",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Caesar Salad" },
+            { "@type": "MenuItem", "name": "Mixed Greens Salad" },
+            { "@type": "MenuItem", "name": "Gelato" },
+            { "@type": "MenuItem", "name": "Italian Ice" },
+            { "@type": "MenuItem", "name": "Cannoli" }
+          ]
+        }
+      ]
+    },
+    "sameAs": [
+      "https://www.facebook.com/rollindoughct",
+      "https://www.instagram.com/rollindoughct"
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does pizza trailer catering cost in Connecticut?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rollin Dough's all-inclusive pizza trailer catering packages start at $1,400 for up to 50 guests, $1,700 for 50–75 guests, and $2,000 for 75–100 guests. Every package includes 2 salads, all-you-can-eat wood fired pizza, and a choice of dessert (gelato, Italian ice, or cannoli). Tax is included in pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does Rollin Dough serve in Connecticut?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rollin Dough is based in Guilford, CT and serves all of Connecticut. We frequently cater events in Guilford, Madison, Branford, New Haven, Hamden, North Haven, Milford, Old Saybrook, Middletown, Wallingford, Cheshire, and surrounding towns along the Connecticut shoreline and beyond."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in a Rollin Dough catering package?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every Rollin Dough catering package includes 2 fresh salads to start (Caesar and Mixed Greens), all-you-can-eat wood fired New Haven-style apizza with your choice of pies from our full menu, and a dessert course with your choice of gelato, Italian ice, or cannoli. Tax is included. Gluten free options are also available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of events does Rollin Dough cater?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our mobile pizza trailer caters weddings, graduation parties, corporate events, birthday parties, block parties, fundraisers, and any private event across Connecticut. We roll up with our wood fired oven and serve fresh pies on-site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Rollin Dough offer gluten free pizza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Rollin Dough offers gluten free pizza options. Just let us know when you book your event and we'll make sure gluten free pies are available for your guests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What style of pizza does Rollin Dough make?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rollin Dough makes authentic New Haven-style apizza, cooked in a wood fired oven. Our pies feature hand-stretched dough with a signature char, just like the legendary New Haven pizzerias. We offer both red and white pies, including signature creations like The Marco (white with bacon, ricotta, and honey) and Clams Casino (clams, roasted peppers, bacon, and garlic)."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -98,6 +238,7 @@
         <li><a href="#menu">Menu</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#packages">Packages</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact" class="btn btn--nav">Book Your Event</a></li>
       </ul>
     </nav>
@@ -332,6 +473,40 @@
         <span>Meriden</span>
         <span>Middletown</span>
         <span>&amp; beyond</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="section__title">Frequently Asked Questions</h2>
+      <p class="section__subtitle">Everything you need to know about booking our pizza trailer</p>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>How much does pizza trailer catering cost in Connecticut?</summary>
+          <p>Our all-inclusive packages start at <strong>$1,400 for up to 50 guests</strong>, $1,700 for 50–75 guests, and $2,000 for 75–100 guests. Every package includes 2 salads, all-you-can-eat wood fired pizza, and a choice of dessert (gelato, Italian ice, or cannoli). Tax is included in pricing.</p>
+        </details>
+        <details class="faq__item">
+          <summary>What areas does Rollin Dough serve in Connecticut?</summary>
+          <p>We're based in <strong>Guilford, CT</strong> and serve all of Connecticut. We frequently cater events in Guilford, Madison, Branford, New Haven, Hamden, North Haven, Milford, Old Saybrook, Middletown, Wallingford, Cheshire, and surrounding towns along the shoreline and beyond.</p>
+        </details>
+        <details class="faq__item">
+          <summary>What is included in a Rollin Dough catering package?</summary>
+          <p>Every package includes <strong>2 fresh salads</strong> to start (Caesar and Mixed Greens), <strong>all-you-can-eat wood fired apizza</strong> with your choice of pies from our full menu, and a <strong>dessert course</strong> — gelato, Italian ice, or cannoli. Tax is included. Gluten free options are also available.</p>
+        </details>
+        <details class="faq__item">
+          <summary>What types of events does Rollin Dough cater?</summary>
+          <p>Our mobile pizza trailer caters <strong>weddings, graduation parties, corporate events, birthday parties, block parties, fundraisers</strong>, and any private event across Connecticut. We roll up with our wood fired oven and serve fresh pies on-site.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Does Rollin Dough offer gluten free pizza?</summary>
+          <p>Yes! We offer <strong>gluten free pizza options</strong>. Just let us know when you book your event and we'll make sure gluten free pies are available for your guests.</p>
+        </details>
+        <details class="faq__item">
+          <summary>What style of pizza does Rollin Dough make?</summary>
+          <p>We make authentic <strong>New Haven-style apizza</strong>, cooked in a wood fired oven. Our pies feature hand-stretched dough with a signature char, just like the legendary New Haven pizzerias. We offer both red and white pies, including signature creations like The Marco and Clams Casino.</p>
+        </details>
       </div>
     </div>
   </section>

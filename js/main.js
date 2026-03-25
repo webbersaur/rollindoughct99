@@ -26,7 +26,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
-document.querySelectorAll('.about__text, .about__image, .menu__card, .package, .packages__includes, .gallery__item, .contact__inner, .area__towns').forEach(el => {
+document.querySelectorAll('.about__text, .about__image, .menu__card, .package, .packages__includes, .gallery__item, .contact__inner, .area__towns, .faq__item').forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
