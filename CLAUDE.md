@@ -10,7 +10,7 @@ Static landing page for **Rollin Dough**, a mobile wood fired apizza trailer bas
 - **Location**: Guilford, CT (GPS: 41.288587, -72.685183)
 - **Phone**: (203) 675-1306
 - **Email**: rollindoughmobile@gmail.com
-- **Repo**: github.com/webbersaur/rollindoughct (GitHub Pages deployment)
+- **Repo**: github.com/webbersaur/rollindoughct99 (GitHub Pages deployment)
 
 ## Architecture
 
